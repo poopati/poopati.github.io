@@ -1,35 +1,76 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Use a modern font for a sleek look */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e8f1f2; /* A light, calming background color */
+    color: #333; /* Text color for good readability */
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(135deg, #3b5998, #8b9dc3); /* Gradient for a more dynamic header */
     color: #fff;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
+    font-size: 2.5em; /* Larger, more impactful header text */
+    text-transform: uppercase; /* Uppercase for a clean, professional look */
+    letter-spacing: 2px; /* Spacing for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 section {
-    padding: 20px;
+    padding: 40px 20px; /* Increased padding for better spacing */
+    max-width: 1200px; /* Limiting width for better readability */
+    margin: auto; /* Center the content */
 }
 
 .project {
     background-color: #fff;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    transition: transform 0.3s ease; /* Add a subtle hover effect */
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Lift the project card on hover */
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #3b5998; /* A color that ties back to the header */
+}
+
+.project-description {
+    font-size: 1em;
+    line-height: 1.6; /* Improved readability */
+    color: #555; /* Slightly lighter color for subtext */
 }
 
 footer {
-    background-color: #333;
+    background-color: #3b5998;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.9em; /* Smaller footer text */
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2); /* Shadow to distinguish footer */
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 1.8em; /* Responsive adjustments for smaller screens */
+        padding: 20px 10px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    .project {
+        padding: 15px;
+    }
 }
