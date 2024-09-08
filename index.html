@@ -2,36 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Data Analyst & Data Scientist Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Add Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Data Analyst & Data Scientist Portfolio</h1>
-        <p>Hello! I’m [Your Name], a passionate data analyst and data scientist.</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Welcome to My Data Analyst & Data Scientist Portfolio</h1>
+            <p>Hello! I’m [Your Name], a passionate data analyst and data scientist dedicated to turning data into actionable insights.</p>
+            <a href="#projects" class="btn-primary">View My Work</a>
+        </div>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I have extensive experience in data analysis, visualization, and machine learning.</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1: OKR Dashboard for EHS</h3>
-            <p>Developed a comprehensive OKR Dashboard using Power BI to track and visualize key results and actions, leading to an 80% improvement in goal achievement.</p>
-            <a href="https://github.com/yourusername/project1">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Project 2: Data Analysis on XYZ</h3>
-            <p>Conducted in-depth data analysis using SQL and Python to uncover insights and drive business decisions.</p>
-            <a href="https://github.com/yourusername/project2">View on GitHub</a>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me at <a href="mailto:youremail@example.com">youremail@example.com</a> or connect with me on <a href="https://www.linkedin.com/in/yourlinkedinprofile">LinkedIn</a>.</p>
-    </section>
+
+    <main>
+        <section id="about" class="section">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <p>
+                I specialize in data analysis, visualization, and machine learning with a strong background in statistical modeling and a keen eye for uncovering patterns and trends that drive business growth.
+            </p>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-title">
+                <h2>Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>OKR Dashboard for EHS</h3>
+                    <p>
+                        Developed a comprehensive OKR Dashboard using Power BI to track and visualize key results and actions, resulting in an 80% improvement in goal achievement compared to the previous year.
+                    </p>
+                    <a href="https://github.com/yourusername/project1" class="btn-secondary">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Data Analysis on XYZ</h3>
+                    <p>
+                        Conducted in-depth data analysis using SQL and Python, providing actionable insights that influenced key business decisions.
+                    </p>
+                    <a href="https://github.com/yourusername/project2" class="btn-secondary">View on GitHub</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <div class="underline"></div>
+            </div>
+            <p>Feel free to reach out to me via email at <a href="mailto:youremail@example.com">youremail@example.com</a> or connect with me on <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a>.</p>
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2024 [Your Name]. All rights reserved.</p>
     </footer>
